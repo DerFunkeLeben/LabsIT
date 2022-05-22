@@ -1,5 +1,13 @@
+import { Catalog } from './catalog.js'
+
 export function getId(el) {
     return el.parentElement.parentElement.dataset['id']
+}
+
+export function findProductById(id) {
+    let productsData = Catalog.get()
+    const [product] = productsData.filter((el) => el.id == id)
+    return product
 }
 
 export function newUserId(prevUserId) {

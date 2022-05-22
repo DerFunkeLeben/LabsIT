@@ -9,7 +9,8 @@ function renderDiv(classList, parent, dataset, text) {
     return el
 }
 
-export function renderProductCard(cartItems, cardObj) {
+export function renderProductCard(cardObj) {
+    let cartItems = JSON.parse(sessionStorage.getItem('cartItems'))
     const [cartItem] = cartItems.filter((el) => el.id == cardObj.id)
 
     const mainIcon = {
