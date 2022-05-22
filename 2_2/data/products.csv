@@ -1,0 +1,7 @@
+id,name,cost,logo
+1,Smartphone,99,./assets/images/smartphone.webp
+2,Tablet,125,./assets/images/tablet.webp
+3,Laptop,200,./assets/images/laptop.webp
+4,TV,180,./assets/images/tv.webp
+5,Watch,50,./assets/images/watch.webp
+6,Headphones,20,./assets/images/headphones.webp

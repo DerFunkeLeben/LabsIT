@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #container .table {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  #container .table td {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #888888;
+  }
+  
+  #container .calc-wrapper {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+  }
+  
+  #container .calc-wrapper.shown {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  #container .calc-overlay {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000b3;
+  }
+  
+  #container .calc-base {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+  }
+  
+  #container .calc-base::after {
+    position: absolute;
+    top: 1rem;
+    right: -2rem;
+    content: '\2716';
+    font-size: 2rem;
+    pointer-events: none;
+  }
+  
+  #container .inputArea {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    background-color: beige;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  #container .btns-container {
+    display: grid;
+    width: 100%;
+    max-width: 340px;
+    height: 70%;
+    margin-top: 30px;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  
+  #container .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    background-color: cornsilk;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  
+  #container .btn:hover {
+    background: peachpuff;
+  }
+  
+  #container .btn-0 {
+    grid-column: 1/4;
+    grid-row: 4/4;
+  }
